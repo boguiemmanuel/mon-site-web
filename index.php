@@ -10,7 +10,10 @@
 </head>
 
 <body>
-    <?php include "squelette/menu.php"; ?>
+    <?php 
+    include "squelette/menu.php";
+    include_once 'PHP/Connexion.php';
+    ?>
 
     </nav>
     <header>
@@ -70,11 +73,25 @@
     </section>
 
     <h1 align="center"> <samp style="color:red;font-size:47px;"> suggestion pour l'amélioration de mon site web</samp> </h1>
-    <?php include "PHP/message.php"; ?>
+    <form action="PHP/message.php" method="POST" align="center" style="padding: 10px;">
 
+        <textarea name="contenu" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" name="envoi">
 
-
-
+    </form>
+    <?php 
+    $reponse = $bdd->query('SELECT * FROM Messages');
+        $donnees = "";
+        while ($donnees = $reponse->fetch()) { ?>
+            <div id="article" style="border: 1px solid black;">
+                <p><?php echo $donnees['Contenu'] ?> </p>
+                
+            </div>
+            <br>
+            <?php 
+        }; ?>
+   
     <footer>
         <?php include "squelette/footer.php"; ?>
     </footer>
