@@ -2,9 +2,9 @@
 <nav>
         <h1 style="color: red; " > PROGRAMMEUR </h1>
         <div class=" onglets">
-           <a href="index.php">home</a>
-           <a href="images.php">images</a>
-           <a href="cv.php">CV</a>
+           <a href="../index.php">home</a>
+           <a href="../PHP/images.php">images</a>
+           <a href="../PHP/cv.php">CV</a>
        </div>
     </nav>
 
