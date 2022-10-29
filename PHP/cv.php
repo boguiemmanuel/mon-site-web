@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
        <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Realisation de CV</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="cv.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../CSS/cv.css" />
 </head>
 <body>
-<?php  include "menu.php" ;?>
+<?php  include "../squelette/menu.php" ;?>
 
 <br></br>
     <main>
@@ -135,7 +135,7 @@
      <hr class="light">
     </main>
     <footer>
-        <?php include "footer.php" ;?>
+        <?php include "../squelette/footer.php";?>
     </footer>
 </body>
 
