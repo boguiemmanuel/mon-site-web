@@ -20,7 +20,7 @@
 
     </p>
     <footer>
-        <?php include "footer.php" ;?>
+        <?php include "../squelette/footer.php" ;?>
     </footer>
     
 </body>
