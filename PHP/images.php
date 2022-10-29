@@ -7,7 +7,7 @@
     <title>images</title>
 </head>
 <body>
-    <?php  include "menu.php" ;?>
+    <?php  include "../squelette/menu.php" ;?>
 
 
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolore? Architecto laudantium tempora quam assumenda, dolor delectus, hic, reprehenderit laborum tenetur temporibus harum aperiam sequi incidunt dolore vero aut atque!
